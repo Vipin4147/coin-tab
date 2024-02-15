@@ -33,6 +33,9 @@ let append_data = (data) => {
     open.innerText = "Open";
     let add = document.createElement("button");
     add.innerText = "Add";
+    open.onclick = () => {
+      window.location.replace("postpage.html");
+    };
     div.append(name, email, phone, website, city, company, open, add);
     container.append(div);
   });
